@@ -1,34 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My First LIFF</title>
-</head>
-<body>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Processing a quiz with jQuery</title>
+    </head>
+    <body>
 
-    <div id="liffdata">
-        <h2>LIFF Data</h2>
-        <table border="1">
-            <tr>
-            <p> 1. 다음 중 고양이는?</p>
-           <input type="radio" name="catName" value="v1">유미<br>
-           <input type="radio" name="catName" value="v2">렝가<br>
-           <input type="radio" name="catName" value="v3">티모<br>
-           <input type="radio" name="catName" value="v4">가렌<br>
-           <input type="button" name="q1" value="입력" onclick="myFucntion()">
-            </tr>
-            <tr>
-            <p> 2. 롤 챔피언 중 사자는?</p>
-            <input id='saza'>
-            <input type="button" name="q2" value="입력" onclick="myFucntion()">
-            </tr>
-        </table>
-        </div>
-
-    <!-- Load LIFF SDK -->
-    <script src="https://d.line-scdn.net/liff/1.0/sdk.js"></script>
+    <h1>Reptile quiz</h1>
+    
+    <form id="quiz-form">
+        <label>
+            What is this? <br>
+            <img src="gs://fbtest-cagf.appspot.com/유미귀여움.png" alt="Reptile"> <br>
+            <select id="quiz-answer">
+                <option value="crocodile">유미</option>
+                <option value="alligator">렝가</option>
+                <option value="caiman">티모</option>
+            </select>
+        </label> <br>
+        <button type="submit">Check Answer</button>
+    </form>
+    <div id="result"></div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="liff.js"></script>
-</body>
+    <script>
+    
+    // When the user submits the form,
+    //   Check what answer they picked
+    //   And tell them if they're correct
+
+    // submit
+ 
+    </script>
+    </body>
 </html>
